@@ -1,73 +1,34 @@
-# React + TypeScript + Vite
+# CipherDoc
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the repository created for the solution we created for the challenge proposed by Internxt.
 
-Currently, two official plugins are available:
+We choose to follow the same direction of the enterprise in order to keep the whole proyect completly open source.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# What is CipherDoc?
+Is a proyect based on developing a text editor focused on the security and privacy of your data.
 
-## React Compiler
+By using this product, you can not sacrifice privacy when you work with other people in a document.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# IMPORTANT
+This is just a prototype and shouldn't be deployed yet in work environments.
 
-## Expanding the ESLint configuration
+# New structure of the proyect
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+├── src/
+│   ├── App.css
+│   ├── App.jsx
+│   ├── assets
+│   │   └── react.svg
+│   ├── components
+│   │   ├── CommandConsole.jsx
+│   │   ├── EditorToolbar.jsx
+│   │   ├── EphemeralAI.jsx
+│   │   ├── LineBlock.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── ShareMenu.jsx
+│   │   ├── SidebarUsers.jsx
+│   │   └── TextEditor.jsx
+│   ├── index.css
+│   └── main.jsx
 ```
