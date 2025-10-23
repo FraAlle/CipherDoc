@@ -23,11 +23,9 @@ function Navbar() {
         <a href="#" className="hover:text-blue-600 flex items-center gap-1">
           🔒 Seguridad
         </a>*/}
-        <a href="https://github.com/fluidicon.png" target="_blank" rel="noopener noreferrer">
-          <img src="https://github.com/fluidicon.png" alt="GitHub Icon" style={{ width: '30px', height: '30px', marginRight: '8px' }} />
-        </a>
         <a href="https://github.com/FraAlle/CipherDoc" className="hover:text-blue-600 flex items-center gap-1">
           Repositorio Github
+          <img src="https://github.com/fluidicon.png" alt="GitHub Icon" style={{ width: '30px', height: '30px', marginRight: '8px' }} />
         </a>
       </div>
     </nav>
