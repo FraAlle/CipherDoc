@@ -14,7 +14,7 @@ function Navbar() {
 
       {/* Menú derecho */}
       <div className="flex items-center gap-6 text-sm text-gray-600">
-        <a href="#" className="hover:text-blue-600 flex items-center gap-1">
+        {/*<a href="#" className="hover:text-blue-600 flex items-center gap-1">
           <Cpu size={15} /> Arquitectura
         </a>
         <a href="#" className="hover:text-blue-600 flex items-center gap-1">
@@ -22,7 +22,7 @@ function Navbar() {
         </a>
         <a href="#" className="hover:text-blue-600 flex items-center gap-1">
           🔒 Seguridad
-        </a>
+        </a>*/}
         <a href="https://github.com/FraAlle/CipherDoc" className="hover:text-blue-600 flex items-center gap-1">
           Repositorio Github
         </a>
