@@ -23,6 +23,9 @@ function Navbar() {
         <a href="#" className="hover:text-blue-600 flex items-center gap-1">
           🔒 Seguridad
         </a>
+        <a href="https://github.com/FraAlle/CipherDoc" className="hover:text-blue-600 flex items-center gap-1">
+          Repositorio Github
+        </a>
       </div>
     </nav>
   );
