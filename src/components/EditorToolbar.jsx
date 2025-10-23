@@ -42,8 +42,8 @@ export default function EditorToolbar({ lines, selectedLines, setLines, addLog }
             </button>
             <button onClick={() => applyWrap("*")} className="toolbar-btn">
                 <Italic size={16} /> Cursiva
-            </button>*/}
-            <div className="mx-2 h-6 w-px bg-gray-200" />
+            </button>
+            <div className="mx-2 h-6 w-px bg-gray-200" />*/}
             <button onClick={addNewLine} className="toolbar-btn">
                 <Plus size={16} /> Nueva línea
             </button>
